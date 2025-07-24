@@ -33,7 +33,7 @@ const Index = () => {
       <nav className="bg-white/95 backdrop-blur-sm sticky top-0 z-50 border-b border-gold/20">
         <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
           <div className="font-montserrat font-bold text-2xl text-charcoal">
-            LASH STUDIO
+            LIVE STYLE
           </div>
           <div className="hidden md:flex space-x-8 font-open-sans">
             <a href="#home" className="text-charcoal hover:text-gold transition-colors">Главная</a>
@@ -250,7 +250,7 @@ const Index = () => {
       <footer className="bg-charcoal border-t border-gold/20 py-8">
         <div className="max-w-6xl mx-auto px-4 text-center">
           <div className="font-montserrat text-2xl font-bold text-gold mb-4">
-            LASH STUDIO
+            LIVE STYLE
           </div>
           <p className="font-open-sans text-white/70 mb-4">
             Профессиональное наращивание ресниц в Москве
