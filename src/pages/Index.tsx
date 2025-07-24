@@ -49,31 +49,58 @@ const Index = () => {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-charcoal/80 to-charcoal/40 z-10"></div>
-        <div 
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url('/img/ff9e9771-5f82-4f89-9422-5a65ec9efad2.jpg')` }}
-        ></div>
-        
-        <div className="relative z-20 text-center max-w-4xl mx-auto px-4">
-          <h1 className="font-montserrat text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-in">
-            Идеальные<br />
-            <span className="text-gold">Ресницы</span>
-          </h1>
-          <p className="font-open-sans text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-            Профессиональное наращивание ресниц с гарантией качества. 
-            Создаем неповторимый образ, подчеркивающий вашу естественную красоту.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-gold hover:bg-gold/90 text-charcoal font-medium px-8 py-6 text-lg">
-              <Icon name="Calendar" className="mr-2" size={20} />
-              Записаться онлайн
-            </Button>
-            <Button size="lg" variant="outline" className="border-gold text-gold hover:bg-gold hover:text-charcoal px-8 py-6 text-lg">
-              <Icon name="Phone" className="mr-2" size={20} />
-              Позвонить
-            </Button>
+      <section id="home" className="relative min-h-screen bg-charcoal flex items-center justify-center overflow-hidden">
+        <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+          <div className="text-center md:text-left">
+            <h1 className="font-montserrat text-5xl md:text-6xl font-bold text-white mb-6 animate-fade-in">
+              Идеальные<br />
+              <span className="text-gold">Ресницы</span>
+            </h1>
+            <p className="font-open-sans text-xl text-white/90 mb-8">
+              Профессиональное наращивание ресниц с гарантией качества. 
+              Создаем неповторимый образ, подчеркивающий вашу естественную красоту.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+              <Button size="lg" className="bg-gold hover:bg-gold/90 text-charcoal font-medium px-8 py-6 text-lg">
+                <Icon name="Calendar" className="mr-2" size={20} />
+                Записаться онлайн
+              </Button>
+              <Button size="lg" variant="outline" className="border-gold text-gold hover:bg-gold hover:text-charcoal px-8 py-6 text-lg">
+                <Icon name="Phone" className="mr-2" size={20} />
+                Позвонить
+              </Button>
+            </div>
+          </div>
+          
+          <div className="relative">
+            <div className="bg-white/10 backdrop-blur rounded-2xl p-8 border border-gold/20">
+              <h3 className="font-montserrat text-2xl font-bold text-gold mb-6 text-center">
+                Виды наращивания ресниц
+              </h3>
+              <img 
+                src="/img/b1143417-3e25-4693-9678-3ca26c269c63.jpg" 
+                alt="Виды наращивания ресниц"
+                className="w-full rounded-lg shadow-lg"
+              />
+              <div className="mt-6 grid grid-cols-2 gap-4 text-sm text-white/80 font-open-sans">
+                <div className="text-center">
+                  <div className="font-semibold text-gold">Классика</div>
+                  <div>Натуральный объем 1:1</div>
+                </div>
+                <div className="text-center">
+                  <div className="font-semibold text-gold">2D Объем</div>
+                  <div>Легкий объем</div>
+                </div>
+                <div className="text-center">
+                  <div className="font-semibold text-gold">3D Объем</div>
+                  <div>Выразительный взгляд</div>
+                </div>
+                <div className="text-center">
+                  <div className="font-semibold text-gold">Голливуд</div>
+                  <div>Максимальная драма</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
